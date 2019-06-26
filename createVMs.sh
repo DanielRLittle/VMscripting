@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#curl -sL https://aka.ms/InstallAzureCliDeb | sudo bash
+curl -sL https://aka.ms/InstallAzureCliDeb | sudo bash
 
 az login
 
