@@ -8,7 +8,7 @@ sudo su - wildfly -c "wget https://download.jboss.org/wildfly/17.0.0.Final/wildf
 
 sudo su - wildfly -c "tar -xf wildfly-17.0.0.Final.tar.gz"
 
-sudo cp ~/VMscripting/wildfly.service /etc/systemd/system/
+sudo mv wildfly.service /etc/systemd/system/wildfly.service
 
 sudo systemctl daemon-reload
 
