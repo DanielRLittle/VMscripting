@@ -2,13 +2,11 @@
 
 sudo apt install -y wget vim openjdk-8-jdk openjdk-8-jre
 
-sudo apt install curl
-
 sudo useradd --create-home wildfly
 
-sudo su - wildfly -c "curl --o wildfly.tgz https://download.jboss.org/wildfly/17.0.0.Final/wildfly-17.0.0.Final.tar.gz"
+sudo su - wildfly -c "wget https://download.jboss.org/wildfly/17.0.0.Final/wildfly-17.0.0.Final.tar.gz"
 
-sudo su - wildfly -c "tar -xf wildfly.tgz"
+sudo su - wildfly -c "tar -xf wildfly-17.0.0.Final.tar.gz"
 
 sudo cp ~/VMscripting/wildfly.service /etc/systemd/system/
 
